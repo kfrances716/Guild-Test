@@ -1,0 +1,23 @@
+{
+    "name": "guild-test-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "NODE_ENV=development nodemon index.js",
+        "test": "NODE_ENV=testing mocha 'test/guild-api.js' --recursive --timeout 60000 --exit"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "mongodb": "^3.6.3",
+        "mongoose": "^5.12.3"
+    },
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "chai-http": "^4.3.0",
+        "mocha": "^8.2.1",
+        "nodemon": "^2.0.6"
+    }
+}
